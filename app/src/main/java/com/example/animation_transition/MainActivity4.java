@@ -16,9 +16,7 @@ public class MainActivity4 extends AppCompatActivity {
         findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MainActivity2.class));
-
-                overridePendingTransition(R.anim.enter, R.anim.exit);
+               onBackPressed();
             }
         });
 
